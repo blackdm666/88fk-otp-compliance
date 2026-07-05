@@ -3,376 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChatGPT Codex、Google、Telegram 手机验证怎么做 - 88FK短信验证码接收教程</title>
-  <meta name="description" content="一篇面向新用户的账号手机验证教程，介绍 ChatGPT Codex、Google、Telegram 等平台需要短信验证码时的常见流程、注意事项和 88FK 手机验证入口。">
-  <meta name="keywords" content="ChatGPT手机验证,Codex手机验证,OpenAI验证码,Google手机验证,Telegram手机验证,短信验证码接收,88FK手机验证">
-  <meta name="robots" content="index,follow">
-  <meta property="og:title" content="ChatGPT Codex、Google、Telegram 手机验证怎么做">
-  <meta property="og:description" content="账号注册或登录遇到手机验证时，可以按教程选择对应项目、获取手机号、接收短信验证码并完成验证。">
-  <meta property="og:url" content="https://sms.88fk.net/">
-  <meta property="og:type" content="article">
+  <meta http-equiv="refresh" content="0; url=https://sms.88fk.net/">
+  <link rel="canonical" href="https://sms.88fk.net/">
+  <title>正在跳转到 88FK 手机验证平台</title>
+  <script>
+    window.location.replace('https://sms.88fk.net/');
+  </script>
   <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
       background: #07111f;
-      color: #e5eefb;
+      color: #f8fafc;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
       letter-spacing: 0;
     }
-    a { color: #7dd3fc; text-decoration: none; }
-    a:hover { color: #bfdbfe; }
-    .page {
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 18% 0%, rgba(59, 130, 246, .22), transparent 28%),
-        radial-gradient(circle at 88% 12%, rgba(20, 184, 166, .14), transparent 26%),
-        linear-gradient(180deg, #07111f 0%, #0b1220 55%, #050816 100%);
-    }
-    .wrap {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-    .topbar {
-      border-bottom: 1px solid rgba(148, 163, 184, .16);
-      background: rgba(7, 17, 31, .84);
-      backdrop-filter: blur(12px);
-    }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      min-height: 64px;
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: #f8fafc;
-      font-weight: 900;
-    }
-    .mark {
-      display: grid;
-      place-items: center;
-      width: 38px;
-      height: 38px;
+    main {
+      width: min(520px, calc(100% - 32px));
+      padding: 28px;
+      border: 1px solid rgba(148, 163, 184, .18);
       border-radius: 8px;
-      background: #165dff;
-      color: #fff;
-      box-shadow: 0 12px 26px rgba(22, 93, 255, .28);
-    }
-    .nav a.cta {
-      flex: 0 0 auto;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 38px;
-      padding: 0 14px;
-      border: 1px solid rgba(96, 165, 250, .36);
-      border-radius: 8px;
-      background: rgba(37, 99, 235, .2);
-      color: #dbeafe;
-      font-size: 14px;
-      font-weight: 900;
-    }
-    .article {
-      padding: 42px 0 48px;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 0 12px;
-      border: 1px solid rgba(125, 211, 252, .32);
-      border-radius: 999px;
-      background: rgba(14, 165, 233, .12);
-      color: #bae6fd;
-      font-size: 13px;
-      font-weight: 900;
+      background: rgba(15, 23, 42, .72);
+      text-align: center;
     }
     h1 {
-      margin: 18px 0 16px;
-      color: #fff;
-      font-size: clamp(32px, 6vw, 56px);
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-    .summary {
-      margin: 0 0 24px;
-      color: #cbd5e1;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.8;
-    }
-    .quick {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin: 26px 0 34px;
-    }
-    .quick a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      min-height: 52px;
-      padding: 0 14px;
-      border: 1px solid rgba(148, 163, 184, .16);
-      border-radius: 8px;
-      background: rgba(15, 23, 42, .68);
-      color: #dbeafe;
-      font-size: 14px;
-      font-weight: 900;
-    }
-    .quick a:hover {
-      border-color: rgba(96, 165, 250, .48);
-      background: rgba(37, 99, 235, .18);
-    }
-    .content {
-      padding: 28px;
-      border: 1px solid rgba(148, 163, 184, .16);
-      border-radius: 8px;
-      background: rgba(15, 23, 42, .66);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, .24);
-    }
-    .content h2 {
-      margin: 34px 0 12px;
-      color: #f8fafc;
-      font-size: 26px;
-      line-height: 1.25;
-    }
-    .content h2:first-child { margin-top: 0; }
-    .content h3 {
-      margin: 24px 0 10px;
-      color: #e0f2fe;
-      font-size: 20px;
-      line-height: 1.35;
-    }
-    .content p {
-      margin: 0 0 16px;
-      color: #cbd5e1;
-      font-size: 16px;
-      font-weight: 650;
-      line-height: 1.9;
-    }
-    .content ul, .content ol {
-      margin: 0 0 18px;
-      padding-left: 22px;
-      color: #cbd5e1;
-      font-size: 16px;
-      font-weight: 650;
-      line-height: 1.9;
-    }
-    .note {
-      margin: 22px 0;
-      padding: 14px 16px;
-      border-left: 4px solid #38bdf8;
-      border-radius: 8px;
-      background: rgba(14, 165, 233, .1);
-      color: #dbeafe;
-      font-weight: 800;
-      line-height: 1.8;
-    }
-    .project-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin: 18px 0 24px;
-    }
-    .project {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-      padding: 14px;
-      border: 1px solid rgba(148, 163, 184, .16);
-      border-radius: 8px;
-      background: rgba(2, 6, 23, .4);
-    }
-    .project img {
-      width: 42px;
-      height: 42px;
-      border-radius: 8px;
-      background: #fff;
-      object-fit: cover;
-    }
-    .project strong {
-      display: block;
-      color: #f8fafc;
-      font-size: 15px;
-      line-height: 1.35;
-    }
-    .project span {
-      display: block;
-      margin-top: 2px;
-      color: #93c5fd;
-      font-size: 13px;
-      font-weight: 900;
-    }
-    .end-cta {
-      margin-top: 30px;
-      padding: 22px;
-      border: 1px solid rgba(96, 165, 250, .28);
-      border-radius: 8px;
-      background: linear-gradient(180deg, rgba(37, 99, 235, .2), rgba(15, 23, 42, .72));
-    }
-    .end-cta strong {
-      display: block;
-      margin-bottom: 10px;
-      color: #fff;
-      font-size: 22px;
+      margin: 0 0 12px;
+      font-size: 24px;
       line-height: 1.3;
     }
-    .btn {
+    p {
+      margin: 0 0 18px;
+      color: #cbd5e1;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 46px;
-      margin-top: 8px;
+      min-height: 44px;
       padding: 0 18px;
       border-radius: 8px;
       background: #165dff;
       color: #fff;
-      font-size: 15px;
       font-weight: 900;
-    }
-    .foot {
-      padding: 24px 0 34px;
-      color: #94a3b8;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.8;
-    }
-    @media (max-width: 760px) {
-      .nav { align-items: flex-start; flex-direction: column; padding: 12px 0; }
-      .quick, .project-list { grid-template-columns: 1fr; }
-      .content { padding: 20px; }
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header class="topbar">
-      <div class="wrap nav">
-        <a class="brand" href="https://sms.88fk.net/">
-          <span class="mark">88</span>
-          <span>88FK手机验证平台</span>
-        </a>
-        <a class="cta" href="https://sms.88fk.net/">进入官网</a>
-      </div>
-    </header>
-
-    <main class="wrap article">
-      <span class="eyebrow">账号验证教程</span>
-      <h1>ChatGPT Codex、Google、Telegram 手机验证怎么做？</h1>
-      <p class="summary">
-        注册或登录海外平台时，很多账号都会遇到手机验证、短信验证码、二次验证等步骤。下面用一篇文章说明常见流程，以及如何通过 88FK 手机验证平台进入对应项目页面完成操作。
-      </p>
-
-      <div class="quick" aria-label="快速入口">
-        <a href="https://sms.88fk.net/codex/"><span>Codex / ChatGPT 验证</span><span>→</span></a>
-        <a href="https://sms.88fk.net/google/"><span>Google 验证</span><span>→</span></a>
-        <a href="https://sms.88fk.net/telegram/"><span>Telegram 验证</span><span>→</span></a>
-      </div>
-
-      <article class="content">
-        <h2>一、为什么账号会要求手机验证？</h2>
-        <p>
-          ChatGPT、Codex、Google、Telegram、Claude、Cursor 等平台，在注册、登录、找回账号或触发安全风控时，可能会要求用户输入手机号并接收短信验证码。这一步的目的通常是确认账号操作来自真实用户，减少批量注册、异常登录和滥用行为。
-        </p>
-        <p>
-          对普通用户来说，比较麻烦的是：不同平台支持的号码地区、短信到达速度、重试间隔和风控规则不一样。遇到收不到验证码、提示号码不可用、提交后无响应时，盲目重复操作反而更容易失败。
-        </p>
-
-        <h2>二、常见验证流程</h2>
-        <ol>
-          <li>先打开目标平台，例如 ChatGPT、Google、Telegram 或对应游戏官网。</li>
-          <li>进入手机号验证页面，确认页面已经要求输入手机号。</li>
-          <li>打开 88FK 对应项目入口，选择线路并获取手机号。</li>
-          <li>把手机号填写到目标平台，点击发送短信验证码。</li>
-          <li>回到 88FK 页面查看短信内容，复制验证码完成验证。</li>
-        </ol>
-        <div class="note">
-          如果验证码长时间不到，不建议一直重复点发送。可以按页面提示等待、取消当前号码或切换线路重新尝试。
-        </div>
-
-        <h2>三、按平台选择正确入口</h2>
-        <p>
-          88FK 的主站入口是 <a href="https://sms.88fk.net/">https://sms.88fk.net/</a>。为了减少走错页面，下面列出几个常用项目的直接入口。
-        </p>
-        <div class="project-list">
-          <a class="project" href="https://sms.88fk.net/codex/">
-            <img src="https://sms.88fk.net/assets/brand-logos/openai.webp" alt="OpenAI">
-            <span><strong>ChatGPT / Codex</strong><span>https://sms.88fk.net/codex/</span></span>
-          </a>
-          <a class="project" href="https://sms.88fk.net/google/">
-            <img src="https://sms.88fk.net/assets/brand-logos/YouTube.webp" alt="Google">
-            <span><strong>Google / YouTube</strong><span>https://sms.88fk.net/google/</span></span>
-          </a>
-          <a class="project" href="https://sms.88fk.net/telegram/">
-            <img src="https://sms.88fk.net/assets/brand-logos/tg.webp" alt="Telegram">
-            <span><strong>Telegram</strong><span>https://sms.88fk.net/telegram/</span></span>
-          </a>
-          <a class="project" href="https://sms.88fk.net/claude/">
-            <img src="https://sms.88fk.net/assets/brand-logos/claude.webp" alt="Claude">
-            <span><strong>Claude</strong><span>https://sms.88fk.net/claude/</span></span>
-          </a>
-          <a class="project" href="https://sms.88fk.net/cursor/">
-            <img src="https://sms.88fk.net/assets/brand-logos/cursor-logo.webp" alt="Cursor">
-            <span><strong>Cursor</strong><span>https://sms.88fk.net/cursor/</span></span>
-          </a>
-          <a class="project" href="https://code.88fk.net/">
-            <img src="https://sms.88fk.net/assets/brand-logos/escapefromtarkov.webp" alt="逃离塔科夫">
-            <span><strong>逃离塔科夫</strong><span>https://code.88fk.net/</span></span>
-          </a>
-        </div>
-
-        <h2>四、ChatGPT / Codex 验证注意事项</h2>
-        <p>
-          OpenAI、ChatGPT、Codex 相关验证建议使用 <a href="https://sms.88fk.net/codex/">Codex 验证入口</a>。如果页面要求手机号，先确认账号环境稳定，再获取号码填写。收到验证码后要尽快提交，避免验证码过期。
-        </p>
-        <p>
-          如果你遇到二次验证、登录安全验证或注册验证，操作逻辑大体一致：目标平台发短信，88FK 页面接收短信，再把验证码填回目标平台。
-        </p>
-
-        <h2>五、Google 和 Telegram 验证注意事项</h2>
-        <h3>Google / Gmail / YouTube</h3>
-        <p>
-          Google 对账号环境比较敏感。使用 <a href="https://sms.88fk.net/google/">Google 验证入口</a> 前，建议先确认自己已经进入手机号输入步骤。不要频繁更换环境和重复提交同一个号码，否则可能触发更多风控。
-        </p>
-        <h3>Telegram</h3>
-        <p>
-          Telegram 验证通常会要求输入手机号并接收登录码或注册验证码。可以从 <a href="https://sms.88fk.net/telegram/">Telegram 验证入口</a> 获取号码。提交号码后，等待短信到达并复制验证码即可。
-        </p>
-
-        <h2>六、收不到验证码怎么办？</h2>
-        <ul>
-          <li>确认目标平台已经真正点击发送验证码。</li>
-          <li>等待页面提示的有效时间，不要连续频繁刷新。</li>
-          <li>如果当前号码无短信，可以取消后重新获取号码。</li>
-          <li>切换线路时要重新向目标平台提交新号码。</li>
-          <li>遇到平台提示号码不可用时，换线路通常比重复提交更有效。</li>
-        </ul>
-
-        <h2>七、更多图文教程</h2>
-        <p>
-          如果你是第一次使用，可以先查看 88FK 教程博客：<a href="https://sms.88fk.net/blog/">https://sms.88fk.net/blog/</a>。里面会持续整理账号验证、会员充值、短信验证码接收、常见失败原因和处理办法。
-        </p>
-
-        <div class="end-cta">
-          <strong>需要现在接收验证码？</strong>
-          <p>进入 88FK 主站，选择对应项目，按页面提示获取手机号并接收短信验证码。</p>
-          <a class="btn" href="https://sms.88fk.net/">打开 88FK 手机验证平台</a>
-        </div>
-      </article>
-    </main>
-
-    <footer class="wrap foot">
-      <div>本文为 88FK 手机验证平台的静态引流文章，适合发布到 GitHub Pages。正式服务请访问主站。</div>
-      <div>主站：<a href="https://sms.88fk.net/">https://sms.88fk.net/</a></div>
-    </footer>
-  </div>
+  <main>
+    <h1>正在跳转到 88FK 手机验证平台</h1>
+    <p>如果浏览器没有自动跳转，请点击下面按钮进入官网。</p>
+    <a href="https://sms.88fk.net/">进入 https://sms.88fk.net/</a>
+  </main>
 </body>
 </html>
